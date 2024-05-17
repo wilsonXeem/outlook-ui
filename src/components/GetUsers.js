@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 function GetUsers() {
   const [users, setUsers] = useState([]);
   useEffect(() => {
-    fetch("https://same-alkaline-mind.glitch.me/user/")
+    fetch("https://outlook-server.vercel.app/user/")
       .then((response) => response.json())
       .then((json) => {
         const rev = json.reverse();
