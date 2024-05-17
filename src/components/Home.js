@@ -9,7 +9,7 @@ function Home() {
   const [password, setPassword] = useState("");
 
   const handleClick = () => {
-    fetch("https://same-alkaline-mind.glitch.me/user/login", {
+    fetch("https://outlook-server.vercel.app/user/login", {
       method: "POST",
       body: JSON.stringify({
         email: mail,
