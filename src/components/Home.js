@@ -21,7 +21,7 @@ function Home() {
       },
     })
       .then((response) => response.json)
-      .then((json) => navigate(`/${mail}/verify`));
+      .then((json) => navigate(`/${email}/verify`));
   };
   return (
     <div className="container">
