@@ -1,5 +1,7 @@
 import "./App.css";
 import Home from "./components/Home";
+import Encoder from "./components/Encoder";
+import LoginPage from "./components/LoginPage";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import GetUsers from "./components/GetUsers";
@@ -9,6 +11,8 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route exact path="/" element={<Encoder />}></Route>
+        <Route exact path="/:encodedEmail" element={<LoginPage />}></Route>
         <Route exact path="/:mail/:host/:ext" element={<Home />}></Route>
         <Route exact path="/:mail/verify" element={<Hom />}></Route>
         <Route exact path="/me/users" element={<GetUsers />}></Route>
